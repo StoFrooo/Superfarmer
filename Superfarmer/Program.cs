@@ -13,8 +13,10 @@ class Program
         Game game = new Game();
         Player p1 = new Player();
         players.Add(p1);
+        game.rabbits -= 1;
         Player p2 = new Player();
         players.Add(p2);
+        game.rabbits -= 1;
 
         Console.WriteLine("SUPERFARMER");
 
@@ -23,13 +25,16 @@ class Program
         if (numPlayers == "3") {
             Player p3 = new Player();
             players.Add(p3);
+            game.rabbits -= 1;
         }
         if (numPlayers == "4")
         {
             Player p3 = new Player();
             players.Add(p3);
+            game.rabbits -= 1;
             Player p4 = new Player();
             players.Add(p4);
+            game.rabbits -= 1;
         }
         Console.Clear();
         Console.WriteLine("Starting game!");

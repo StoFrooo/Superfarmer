@@ -25,6 +25,7 @@ namespace Superfarmer
             smallDog = 0;
             largeDog = 0;
             name += 1;
+
         }
 
 
